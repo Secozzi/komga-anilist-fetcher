@@ -1,0 +1,17 @@
+[package]
+name = "komga-anilist-fetcher"
+version = "0.1.0"
+edition = "2021"
+description = "Fetch manga metadata for komga from anilist via the terminal"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.86"
+confy = "0.6.1"
+serde = { version = "1.0.204", features = ["derive"] }
+inquire = "0.7.5"
+reqwest = { version = "0.12.5", features = ["blocking", "json"] }
+serde_json = "1.0.122"
+regex = "1.10.6"
